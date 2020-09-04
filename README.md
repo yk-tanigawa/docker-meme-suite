@@ -34,6 +34,10 @@ singularity pull docker://yosuketanigawa/meme-suite
 singularity run meme-suite_latest.sif
 ```
 
+## Reference
+
+1. Ma, W., Noble, W. S. & Bailey, T. L. Motif-based analysis of large nucleotide data sets using MEME-ChIP. Nat Protoc 9, 1428–1450 (2014).
+
 ## Acknowledgement
 
 [![Wold you buy me some coffee?](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/yosuketanigawa)
