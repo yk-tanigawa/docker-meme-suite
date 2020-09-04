@@ -4,24 +4,34 @@ This is [Yosuke Tanigawa](https://yosuketanigawa.com)'s folk of Docker file for 
 We updated the Dockerfile for MEME-suite v 5.1.1.
 
 ## Docker
-To build the Docker image, run the command
 
-```
-docker build -t yosuketanigawa/meme-suite .
-```
-
-For convenience, the Docker image can be found in [Dockerhub](https://hub.docker.com/r/yosuketanigawa/meme-suite/builds/).
+For convenience, we deposited the Docker image to [Dockerhub](https://hub.docker.com/r/yosuketanigawa/meme-suite/builds/).
 
 To run a container using the image above
 
 ```
-docker run -i -t yosuketanigawa/meme-suite
+docker run -it yosuketanigawa/meme-suite
 ```
 
 To pull from Dockerhub
 
 ```
 docker pull yosuketanigawa/meme-suite:5.1.1
+```
+
+To build the Docker image based on the `Dockerfile` in this repo, you may run the following command
+
+```
+docker build .
+```
+
+## Singularity
+
+In singularity environment, you may pull the docker image from Docker Hub, create an `sif` file, the run it.
+
+```{bash}
+singularity pull docker://yosuketanigawa/meme-suite
+singularity run meme-suite_latest.sif
 ```
 
 ## Acknowledgement
